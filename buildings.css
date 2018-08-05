@@ -1,0 +1,66 @@
+.buildings-layer {
+  transform-style: preserve-3d;
+}
+
+.building {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: teal;
+  transform-style: preserve-3d;
+  transition: transform .5s ease;
+  /* animation: bloop 4s linear infinite; */
+}
+.building:hover {
+  transform: rotate(180deg);
+}
+.building-b {
+  left: 110px;
+}
+
+.side {
+  position: absolute;
+  width: 60px;
+  height: 150px;
+  opacity: .5;
+}
+.side--n {
+  background-color: red;
+  transform: rotateX(90deg);
+  transform-origin: top;
+}
+.side--s {
+  background-color: yellow;
+  transform: rotateX(90deg) translateZ(-60px);
+  transform-origin: top;
+}
+.side--e {
+  background-color: blue;
+  transform: rotateX(90deg) rotateY(90deg);
+  transform-origin: top left;
+}
+.side--w {
+  background-color: green;
+  transform: rotateX(90deg) rotateY(-90deg);
+  transform-origin: top right;
+}
+
+.roof {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  transform: translateZ(150px);
+}
+
+
+/* @keyframes bloop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+} */
