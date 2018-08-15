@@ -3,11 +3,11 @@
 }
 .road {
   position: absolute;
-  top: 0;
-  left: 70px;
-  width: 30px;
-  height: 500px;
-  background-color: antiquewhite;
+  top: 70px;
+  left: 0;
+  width: 500px;
+  height: 30px;
+  background-color: #414D53;
   /* transform: translateZ(70px); */
   transform-style: preserve-3d;
 }
@@ -62,10 +62,10 @@
 
 @keyframes car-motion {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) rotateZ(-90deg);
   }
   100% {
-    transform: translateY(calc(500px - 20px));
+    transform: translateX(calc(500px - 20px)) rotateZ(-90deg);
   }
 }
 
